@@ -18,6 +18,7 @@ public class Util {
 	public void waitVisibilityConditionById(String waitSelector,int time) throws IOException{
 	    wait = new WebDriverWait(webDriver,time);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(waitSelector)));
+	
 	}
 	
 	public void waitVisibilityConditionByLinkText(String waitSelector,int time) throws IOException{
